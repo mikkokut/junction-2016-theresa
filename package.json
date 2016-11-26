@@ -1,7 +1,7 @@
 {
-  "name": "junction",
+  "name": "Theresa",
   "version": "0.0.1",
-  "description": "project id: junction-150619 bucket: junction-aremmi",
+  "description": "I am Theresa, your personal sleep assistant. I work with your ŌURA Ring but for demonstration purposes I currently fetch the data from demo account.",
   "main": "index.js",
   "engines": {
     "node": "7.2.0"
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Mikko Kutilainen",
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.4.4",
