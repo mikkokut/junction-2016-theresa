@@ -349,7 +349,7 @@ function handleIntent(intent, data, session) {
 	console.log(intent.confidence);
 
 	if (intent.confidence < 0.70) {
-		session.send(`I'm sorry I can't say anything to that. If you need help, just ask.`);
+		session.send(`I'm sorry I can't say anything to that. I can help with questions about your sleep history.`);
 		return;
 	}
 
