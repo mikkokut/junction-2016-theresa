@@ -857,7 +857,7 @@ function handleIntent(intent, data, session) {
 									const readinessScore = readiness.score;
 									
 									const hm = durationToHoursAndMinutes(duration);
-									session.send(`You slept ${hm.hours} hours and ${hm.minutes} minutes. Your sleep score was ${sleepScore} and readiness score ${readinessScore}. Hope this makes you happy :)`);
+									session.send(`You slept ${hm.hours} hours and ${hm.minutes} minutes. Your sleep score was ${sleepScore} and readiness score ${readinessScore}.`);
 								});
 							}
 						});
