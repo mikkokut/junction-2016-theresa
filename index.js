@@ -62,7 +62,7 @@ bot.dialog('/', function (session) {
 
 	console.log(session.message.text);
 
-	if (session.message.indexOf('/start') !== -1) {
+	if (session.message.text.indexOf('/start') !== -1) {
 		session.send('I am Theresa, your personal sleep assistant. I work with your ŌURA Ring but for demonstration purposes I currently fetch the data from demo account. Ask me about your sleep.');
 		return;
 	}
