@@ -58,6 +58,7 @@ bot.dialog('/', function (session) {
 	session.sendTyping();
 
 	saveAddress(session.message.address);
+	console.log(`User joined! There is ${addresses.length} clients right now`);
 
 	if (session.message.text === '/start') {
 		session.send('I am Theresa, your personal sleep assistant. I work with your ŌURA Ring but for demonstration purposes I currently fetch the data from demo account. Ask me about your sleep.');
@@ -344,8 +345,8 @@ bot.dialog('/morningFeeling', [
 
 
 function handleIntent(intent, data, session) {
-	console.log(intent.intent);
-	console.log(intent.confidence);
+
+	console.log(`Hande intent: ${intent.intent} @ ${intent.confidence}%`);
 
 	if (intent.confidence < 0.70) {
 		session.send(`I'm sorry I can't say anything to that. I can help with questions about your sleep history.`);
