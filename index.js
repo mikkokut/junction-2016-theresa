@@ -60,6 +60,8 @@ bot.dialog('/', function (session) {
 	saveAddress(session.message.address);
 	console.log(`User joined! There is ${addresses.length} clients right now`);
 
+	console.log(session.message.text);
+	
 	if (session.message.text === '/start') {
 		session.send('I am Theresa, your personal sleep assistant. I work with your ŌURA Ring but for demonstration purposes I currently fetch the data from demo account. Ask me about your sleep.');
 		return;
