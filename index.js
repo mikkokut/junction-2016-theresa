@@ -350,7 +350,7 @@ function handleIntent(intent, data, session) {
 
 	console.log(`Hande intent: ${intent.intent} @ ${intent.confidence}%`);
 
-	if (intent.confidence < 0.70) {
+	if (intent.confidence < 0.60) {
 		session.send(`I'm sorry I can't say anything to that. I can help with questions about your sleep history.`);
 		return;
 	}
